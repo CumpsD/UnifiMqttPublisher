@@ -1,8 +1,8 @@
 FROM python:3
 
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir unificontrol && \
-    pip install --no-cache-dir unificontrol paho-mqtt
+    pip install --no-cache-dir pyunifi && \
+    pip install --no-cache-dir paho-mqtt
 
 WORKDIR /usr/local/bin
 
